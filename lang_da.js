@@ -128,8 +128,8 @@ const langArr = {
         "en": "What Our Client Says?"
     },
     "clientThoughtsMain": {
-        "ru": "Отзывы наших клиентов, это менеджеры по продажам из разных компаний. Они рассказывают об услугах ImagineAnalytics и дают свои оценки, когда использовали наши продукты.",
-        "en": "Testimonials from our clients, who are sales managers from various companies. They share their experiences with ImagineAnalytics services and provide their ratings based on their use of our products."
+        "ru": "Отзывы наших клиентов, это менеджеры по продажам из разных компаний. Они рассказывают об услугах SmartAnalytics и дают свои оценки, когда использовали наши продукты.",
+        "en": "Testimonials from our clients, who are sales managers from various companies. They share their experiences with SmartAnalytics services and provide their ratings based on their use of our products."
     },
     "client1": {
         "ru": "... которые используются в производстве различных инженерных изделий и компонентов. Он относится к серии 6xxx системы обозначения сплавов. Как следует из номера серии, основными легирующими элементами в нем являются магний и кремний. Впервые он был разработан в 1935 году. Эта серия относится к деформируемым алюминиевым сплавам и поддается термической обработке.",

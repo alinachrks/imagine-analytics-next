@@ -1,7 +1,7 @@
 const langArr = {
     "headTitle": {
-        "ru": "ImagineAnalytics",
-        "en": "ImagineAnalytics"
+        "ru": "SmartAnalytics",
+        "en": "SmartAnalytics"
     },
     "navHome": {
         "ru": "ГЛАВНАЯ",
@@ -24,8 +24,8 @@ const langArr = {
         "en": "CONTACT US"
     },
     "headerDescription": {
-        "ru": "ImagineAnalytics - это коллектив экспертов, специализирующихся в области анализа данных и искусственного интеллекта. Мы объединяем передовые знания и технологии для решения самых сложных задач в сфере аналитики и разработки.",
-        "en": "ImagineAnalytics is a team of professionals specializing in data analysis and artificial intelligence. We combine cutting-edge knowledge and technologies to tackle the most complex challenges in the field of analytics and development. Our team consists of experienced specialists, each a professional in their field. We strive for constant improvement and development to stay ahead of the latest trends and innovations in data analysis."
+        "ru": "SmartAnalytics - это коллектив экспертов, специализирующихся в области анализа данных и искусственного интеллекта. Мы объединяем передовые знания и технологии для решения самых сложных задач в сфере аналитики и разработки.",
+        "en": "SmartAnalytics is a team of professionals specializing in data analysis and artificial intelligence. We combine cutting-edge knowledge and technologies to tackle the most complex challenges in the field of analytics and development. Our team consists of experienced specialists, each a professional in their field. We strive for constant improvement and development to stay ahead of the latest trends and innovations in data analysis."
     },    
     "headerDescription2": {
         "ru": "Посетите нас, чтобы узнать больше",
@@ -128,8 +128,8 @@ const langArr = {
         "en": "What Our Client Says?"
     },
     "clientThoughtsMain": {
-        "ru": "Отзывы наших клиентов, это менеджеры по продажам из разных компаний. Они рассказывают об услугах ImagineAnalytics и дают свои оценки, когда использовали наши продукты.",
-        "en": "Testimonials from our clients, who are sales managers from various companies. They share their experiences with ImagineAnalytics services and provide their ratings based on their use of our products."
+        "ru": "Отзывы наших клиентов, это менеджеры по продажам из разных компаний. Они рассказывают об услугах SmartAnalytics и дают свои оценки, когда использовали наши продукты.",
+        "en": "Testimonials from our clients, who are sales managers from various companies. They share their experiences with SmartAnalytics services and provide their ratings based on their use of our products."
     },
     "client1": {
         "ru": "... которые используются в производстве различных инженерных изделий и компонентов. Он относится к серии 6xxx системы обозначения сплавов. Как следует из номера серии, основными легирующими элементами в нем являются магний и кремний. Впервые он был разработан в 1935 году. Эта серия относится к деформируемым алюминиевым сплавам и поддается термической обработке.",
