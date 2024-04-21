@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Atmosfar Aluminium</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+           <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="offer.html">PRODUCTS</a></li>
+                <li><a href="blog.html">CERTEFICATES AND DOWNLOADS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>      
+    <h1>Contact Us</h1>    
+</section>
+    
+    
+<!--------- contact us --------->
+  <section class="location">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2254.1266915506267!2d12.994077816033514!3d55.59980871124857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653a15682d700c1%3A0x2be9c1b43a8a892c!2zQXRtb3Nmw6Ry!5e0!3m2!1sru!2skz!4v1666276035343!5m2!1sru!2skz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  </section>
+
+  <section class="contact-us">
+
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>Fersens väg 4, 211 42 Malmö, Sweden</h5>
+                    <p>Fersens väg, Sweden, IN</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+4 640125077</h5>
+                    <p>Monday to saturday, 10AM to 6PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>atmosfar@mail.com</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form id="tg">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="text" name="phone" placeholder="Enter your phone" required>
+                <input type="email" name="email" placeholder="Enter email address" required>
+                <input type="text" name="subject" placeholder="Enter your subject" required>
+                <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                <button type="submit" class="hero-btn red-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+  </section>
+
+<!---------- Footer--------->
+
+<section class="footer">
+    <h4>Our social medias</h4>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-instagram"></i>
+    </div>
+</section>
+
+<!-------JavaScript for toggle menu-------->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    function addDarkmodeWidget() {
+      new Darkmode().showWidget();
+    }
+    window.addEventListener('load', addDarkmodeWidget);
+
+
+    const TOKEN = "5625407864:AAHF90AQcOuj-UUx4VxyDKBiae5Z7oiPyEg";
+    const CHAT_ID = "456934315";
+    const URI_API = `https://api.telegram.org/bot${ TOKEN }/sendMessage`;
+
+
+    document.getElementById('tg').addEventListener('submit', function(e){
+        e.preventDefault();
+        
+        let message = `<b>Request from a potential Client!</b>\n`;
+        message += `<b>Name:</b> ${ this.name.value }\n`;
+        message += `<b>Phone:</b> ${ this.phone.value }\n`;
+        message += `<b>Email:</b> ${ this.email.value }\n`;
+        message += `<b>Subject:</b> ${ this.subject.value }\n`;
+        message += `<b>Message:</b> ${ this.message.value }\n`;
+
+        axios.post(URI_API, {
+            chat_id: CHAT_ID,
+            parse_mode: 'html',
+            text: message
+        })
+        .then((res) => {
+            this.name.value = "";
+            this.phone.value = "";
+            this.email.value = "";
+            this.subject.value = "";
+            this.message.value = "";
+        })
+        .catch((err) => {
+            console.warn(err);
+        })
+        .finally(() => {
+            console.log('End')
+        })
+    })
+</script> 
+    
+</body>  
+</html>

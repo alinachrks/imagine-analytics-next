@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Data Analytics Center</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"
+          ><img src="images/logo.png" alt="Company Logo"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html" id="navHome">HOME</a></li>
+            <li><a href="about.html" id="navAbout">ABOUT</a></li>
+            <li><a href="offer.html" id="navProducts">PRODUCTS</a></li>
+            <li>
+              <a href="blog.html" id="navDownloads"
+                >OUR PROJECTS</a
+              >
+            </li>
+            <li><a href="contact.html" id="navContact">CONTACT US</a></li>
+            <li>
+              <select class="change-lang" id="languageDropdown">
+                <option value="ru" data-icon="flag-icon-ru" id="ruOption">
+                  РУС
+                </option>
+                <option value="en" data-icon="flag-icon-en" id="enOption">
+                  ENG
+                </option>
+              </select>
+            </li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+        <i class="fa fa-sun" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>Data Analytics Center</h1>
+        <p id="headerDescription">
+          Data Analytics Center is a hub of expertise dedicated to harnessing the power of data for 
+          impactful decision-making in the city of Almaty. Our center employs cutting-edge analytical 
+          tools and methodologies to transform raw data into actionable insights, empowering city planners, 
+          businesses, and policymakers to make informed choices that drive progress and prosperity. 
+          From demographic trends to economic indicators, we delve deep into the data to uncover patterns, 
+          forecast outcomes, and provide strategic recommendations. With a focus on innovation and 
+          collaboration, Data Analytics Center is at the forefront of leveraging data science 
+          for the sustainable development and smart growth of Almaty.
+        </p>
+        <a href="about.html" class="hero-btn" id="headerDescription2"
+          >Visit Us To know More</a
+        >
+      </div>
+    </section>
+    <section class="offer">
+      <h1 id="whatWeOffer">What we offer?</h1>
+      <p id="whatWeOffer1">
+        We offer a wide range of services in analytics and development,
+        including niche search, building analytical panels, marketing research
+        (demand, supply), simulations, scenario modeling, market analytics
+        (kaspi.kz), geo-analytics, chatbots, landing page creation, design,
+        Yandex/Google analytics, mailing, provision of databases,
+        socio-demographic data, macroeconomic research, tools for cognitive
+        engagement, and more.
+      </p>
+      <p id="whatWeOffer2">Custom solutions development.</p>
+      <p id="whatWeOffer3">
+        Integration and maintenance of analytical systems.
+      </p>
+      <div class="row">
+        <div class="offer-col">
+          <h3 id="offerCol1">Marketing Research</h3>
+          <p id="offerCol1SubCol1">
+            We conduct comprehensive market research, analyzing demand and
+            supply to help your business reach new heights.
+          </p>
+        </div>
+        <div class="offer-col">
+          <h3 id="offerCol2">Simulations and Scenario Modeling</h3>
+          <p id="offerCol2SubCol2">
+            We create simulations and model various scenarios to determine
+            optimal strategies and forecast outcomes.
+          </p>
+        </div>
+        <div class="offer-col">
+          <h3 id="offerCol3">Chatbot Development and Integration</h3>
+          <p id="offerCol3SubCol3">
+            We create and integrate chatbots to automate communication with
+            customers and optimize business processes.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="building">
+      <h1 id="buildingsDescription">Some Examples</h1>
+      <p id="buildingsDescriptionSub">
+        Many advancements in data analytics in the modern world require new
+        ideas and approaches that offer significant advantages over existing
+        ones in all aspects. In the field of data analytics, modeling and
+        analysis processes have a wide range of applications.
+      </p>
+      <div class="row">
+        <div class="building-col">
+          <img src="images/london.png" alt="London Image" />
+          <div class="layer"><h3 id="kualaLumpur">KUALA LUMPUR</h3></div>
+        </div>
+        <div class="building-col">
+          <img src="images/newyork.png" alt="New York Image" />
+          <div class="layer"><h3 id="moscow">MOSCOW</h3></div>
+        </div>
+        <div class="building-col">
+          <img src="images/washington.png" alt="Washington Image" />
+          <div class="layer"><h3 id="almaty">ALMATY</h3></div>
+        </div>
+      </div>
+    </section>
+    <section class="facilities">
+      <h1 id="ourProducts">Our Products</h1>
+      <p id="historyFacts">History about Analytics, and some facts.</p>
+      <div class="row">
+        <div class="facilities-col">
+          <img src="images/glass1.jpg" alt="Glass Image 1" />
+          <h3 id="history">History</h3>
+          <p id="history1">Analytics is a ...</p>
+        </div>
+        <div class="facilities-col">
+          <img src="images/glass2.jpg" alt="Glass Image 2" />
+          <h3 id="consists">What AI consists of?</h3>
+          <p id="consists1">AI is the ...</p>
+        </div>
+        <div class="facilities-col">
+          <img src="images/glass1.jpg" alt="Glass Image 3" />
+          <h3 id="whatUsed">What materials were used?</h3>
+          <p id="whatUsed1">
+            Artificial Intelligence (AI) is a branch of computer science that
+            deals with creating programs and devices capable of performing tasks
+            that typically require human intelligence. AI aims to create
+            machines that can think, learn,and make decisions like humans.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials">
+      <h1 id="clientThoughts">What Our Client Says?</h1>
+      <p id="clientThoughtsMain">
+        Testimonials from our clients, who are sales managers from various
+        companies. They share their experiences with ImagineAnalytics services
+        and provide their ratings based on their use of our products.
+      </p>
+      <div class="row">
+        <div class="testimonial-col">
+          <img src="images/user1.jpg" alt="User 1 Image" />
+          <div>
+            <p id="client1">
+              Aluminum alloy 6061 is one of the many alloys which have been used
+              in manufacturing various engineering products and components. It
+              belongs to 6xxx series of the alloy designation system. As the
+              series number indicates, its major alloying elements are Magnesium
+              and silicon. It was developed for the first time in 1935. This
+              series belongs to wrought aluminum alloy and it is heat treatable.
+            </p>
+            <h3 id="clientName1">Christine Berkley</h3>
+            <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+        </div>
+        <div class="testimonial-col">
+          <img src="images/user2.jpg" alt="User 2 Image" />
+          <div>
+            <p id="client2">
+              These alloys are made up of the combination of magnesium and
+              silicon; together they form Magnesium Silicide, popularly known
+              for its good mechanical properties, particularly for good
+              weldability, the greatest strength with good corrosion resistance
+              and the ability to be anodized. It is more commonly used for the
+              extrusion process. Currently, it’s been widely used in the
+              construction of aircraft structures, yacht construction,
+              automotive part (Audi A8 chassis) and bicycle frames
+            </p>
+            <h3 id="clientName2">David Byer</h3>
+            <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta">
+      <h1 id="callUsPhone">CALL US</h1>
+      <h1 id="contactUsEmail">OR CONTACT US VIA EMAIL</h1>
+      <a href="contact.html" class="hero-btn" id="contactUsPage">CONTACT US</a>
+    </section>
+    <section class="footer">
+      <h4 id="ourSocialMedias">Our social medias</h4>
+      <div class="icons">
+        <i class="fa fa-facebook"></i> <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i> <i class="fa fa-instagram"></i>
+      </div>
+    </section>
+    <script src="lang.js"></script>
+    <script src="app.js"></script>
+    <script>
+      var navLinks = document.getElementById("navLinks")
+      function showMenu() {
+        navLinks.style.right = "0"
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px"
+      }
+      function addDarkmodeWidget() {
+        new Darkmode({
+          bottom: "64px",
+          right: "20px",
+          left: "unset",
+          time: "0.5s",
+          mixColor: "#fff",
+          backgroundColor: "#fff",
+          buttonColorDark: "#000000",
+          buttonColorLight: "#fff",
+          saveInCookies: !1,
+          label: "",
+          autoMatchOsTheme: !0,
+        }).showWidget()
+      }
+      window.addEventListener("load", addDarkmodeWidget),
+        document.addEventListener('DOMContentLoaded', function () {
+      var languageDropdown = document.getElementById('languageDropdown');
+
+      languageDropdown.addEventListener('change', function () {
+          var selectedLanguage = languageDropdown.value;
+          translatePage(selectedLanguage);
+      });
+
+      function translatePage(language) {
+          document.querySelectorAll('[data-translate]').forEach(function (element) {
+              var key = element.getAttribute('data-translate');
+              if (translations[language] && translations[language][key]) {
+                  element.textContent = translations[language][key];
+              }
+          });
+      }
+
+      // Set initial language based on user's browser language
+      var userLanguage = navigator.language || navigator.userLanguage;
+      var initialLanguage = userLanguage.startsWith('ru') ? 'ru' : 'en';
+      languageDropdown.value = initialLanguage;
+      translatePage(initialLanguage);
+  });
+    </script>
+  </body>
+</html>

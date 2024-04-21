@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Atmosfar Aluminium</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+           <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="offer.html">PRODUCTS</a></li>
+                <li><a href="blog.html">CERTEFICATES AND DOWNLOADS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>      
+    <h1>About Us</h1>    
+</section>
+    
+    
+<!--------- About us content --------->
+    
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>We are the world's largest company</h1>
+            <p>Atmosfar has become a professional aluminium extrusion manufacturer for architectural systems and industrial applications.<p>
+                
+                
+                <p>Our factory is well equipped with 40 extrusion lines with a capacity of 500- 5500 tons. With a total annual output of 15000 tons.</p> 
+                <p>Atmosfar produces a wide range of aluminum extruded products, including window and door systems, curtain walls, performance louver, heat sink, solar panel framing, etc. Customized service is available.</p> 
+                    <p>Our engineers can help you to design your own extrusion structure and produce your own system.</p>
+            <a href="index.html" class="hero-btn red-btn">EXLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img id="img" src="images/about.jpg" />
+        </div>
+    </div>
+    
+</section>    
+
+<!---------- Footer--------->
+
+<section class="footer">
+    <h4>Our social medias</h4>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-instagram"></i>
+    </div>
+</section>
+
+<!-------JavaScript for toggle menu-------->
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    function addDarkmodeWidget() {
+      new Darkmode().showWidget();
+    }
+    window.addEventListener('load', addDarkmodeWidget);
+</script>  
+    
+</body>  
+</html>

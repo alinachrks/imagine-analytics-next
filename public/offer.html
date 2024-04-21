@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Atmosfar Aluminium</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+           <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="offer.html">PRODUCTS</a></li>
+                <li><a href="blog.html">CERTEFICATES AND DOWNLOADS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>      
+    <h1>Our Offer</h1>    
+</section>
+    
+    
+<!--------- Offer --------->
+    
+<section class="offer">
+    <h1>What we offer</h1>
+    <p>1. Atmosfar produces a large number of architectural aluminium profiles also known as aluminum construction profiles, used for building and construction areas such as window and doors, curtain walls, fencing and handrail, louvre and walkway covers. These construction aluminium profiles include both standard and thermal-break systems.</p>
+
+
+        <p>2. Our architectural aluminum extrusions for architectural systems are available in a variety of finishes which contain mill finish, clear anodized, electrolytic anodizing, powder-coating, PVDF painting and woodgrain finish. We also offer fabrication services of customized architectural aluminum extrusion profiles based on your needs.</p>
+        
+        
+        <p>3. All requests are made to orders. When ordering aluminum extrusions construction profiles, please specify your requirements about alloy, temper, length, quantity, surface finish, end-use and any special instructions regarding tolerance, delivery, packing and certification. It couldn't be better if you can share with us your designed drawings.</p>
+    
+    <div class="row">
+        <div class="offer-col">
+            <h3>Aluminium Window Profiles</h3>
+            <p>Windows and doors are the most widely used aluminium building products in the architectural aluminium extrusion area.</p>
+        </div>
+        <div class="offer-col">
+            <h3>Aluminium Curtain Wall Profile</h3>
+            <p>Curtain Wall is a thin and lightweight wall system used for high-rise buildings, normally composed of aluminium and glass.</p>
+        </div>
+        <div class="offer-col">
+            <h3>Aluminium Fencing & Handrail</h3>
+            <p>From standard applications to high-end ones, Otalum offers a wide range of choices of aluminium fencing and handrail products, widely used in residential areas.</p>
+        </div>
+    </div>
+    
+</section>
+
+<!--------- Facilities --------->
+    
+<section class="facilities">
+    <h1>Our Products</h1>
+    <p>History about Aluminium, and some facts.</p>
+    
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images/glass1.jpg">
+            <h3>History</h3>
+            <p>Aluminum is a chemical element. It is a soft, non-magnetic and ductile material in boron group. The chief ore of aluminum is Bauxite. Aluminum is a silvery white metal with a 13th  element in the periodic table. Its atomic number is 13 and 26.98153 is its atomic mass and it is popularly known as Al.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/glass2.jpg">
+            <h3>What aluminium consists of?</h3>
+            <p>Aluminum is the utmost widespread metal on the world, making up 10% of the Earth's core mass. After oxygen and  silicon, Aluminum is the most common chemical in our planet. It has many applications but pure aluminum does not exist because it can bend easily with many other elements.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/glass3.jpg">
+            <h3>What materials were used?</h3>
+            <p>An alloy is commonly known  as the  mixture of two or more metals made by melting  and mixing the selected metals. Thus a mixture obtained from mixing has some different and advancement in properties from individual metals. Aluminum alloys are which aluminum (Al) is employed as a major metal. Copper, magnesium, manganese, silicon, tin and zinc  are  the  most  commonly  using  typical  alloying  elements.</p>
+        </div>
+    </div>
+
+<!---------- Footer--------->
+
+<section class="footer">
+    <h4>Our social medias</h4>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-instagram"></i>
+    </div>
+</section>
+
+<!-------JavaScript for toggle menu-------->
+<script>
+    
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    function addDarkmodeWidget() {
+      new Darkmode().showWidget();
+    }
+    window.addEventListener('load', addDarkmodeWidget);
+</script>     
+    
+</body>  
+</html>
